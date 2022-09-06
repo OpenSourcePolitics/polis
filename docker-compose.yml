@@ -28,7 +28,7 @@ services:
     networks:
       - "polis-net"
     # Scale the server container to a given number of instances.
-    scale: 1
+    scale: 3
 
   math:
     container_name: polis-math
