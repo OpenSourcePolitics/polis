@@ -68,7 +68,7 @@ services:
     networks:
       - "polis-net"
     ports:
-      - "443:3000"
+      - "3000:80"
 
   file-server:
     container_name: polis-file-server
