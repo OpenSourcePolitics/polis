@@ -10,15 +10,16 @@ module.exports = {
     // These allow for local ip routing for remote dev deployment
     "^(n|ssl)ip\\.io$",
     ".+\\.(n|ssl)ip\\.io$",
+    "^polis\\.osp\\.cat$"
   ],
 
   // Point to a polisServer instance (local recommended for dev)
   //SERVICE_URL: "http://localhost:5000", // local server; recommended for dev
-  SERVICE_URL: "http:localhost:5000",
+  SERVICE_URL: 'https://polis.osp.cat',
 
   // Used for setting appropriate hostname for embedding.
   //SERVICE_HOSTNAME: "123.45.67.89.sslip.io",
-  SERVICE_HOSTNAME: "localhost",
+  SERVICE_HOSTNAME: "polis.osp.cat",
 
   // Note that this must match the participation client port specified in polisServer instance
   PORT: 5001,
