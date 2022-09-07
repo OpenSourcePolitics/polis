@@ -12,7 +12,7 @@ module.exports = {
     // These allow for local ip routing for remote dev deployment
     "^(n|ssl)ip\\.io$",
     ".+\\.(n|ssl)ip\\.io$",
-    "^polis\\.osp\\.cat$"
+    "^polis\\.osp\\.dev$"
   ],
 
   DISABLE_INTERCOM: true,
@@ -21,7 +21,7 @@ module.exports = {
   FB_APP_ID: '661042417336977',
 
   //SERVICE_URL: 'http://localhost:5000',
-  SERVICE_URL: 'https://polis.osp.cat',
+  SERVICE_URL: 'https://polis.osp.dev',
 
   UPLOADER: 'local', // alt: s3, scp
 

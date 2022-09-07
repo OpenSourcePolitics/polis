@@ -1,7 +1,7 @@
 module.exports = {
 
   //SERVICE_URL: 'http://localhost:5000',
-  SERVICE_URL: 'https://polis.osp.cat',
+  SERVICE_URL: 'https://polis.osp.dev',
 
   UPLOADER: 'local', // alt: s3, scp
 
