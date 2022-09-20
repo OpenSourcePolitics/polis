@@ -1,0 +1,1 @@
+docker-compose exec --user postgres postgres /bin/sh -c 'pg_dump -Fc "polis-dev"'
