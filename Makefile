@@ -6,7 +6,7 @@ pull: ## Pull most recent Docker container builds (nightlies)
 	docker-compose pull
 
 prepare:
-	sudo ln -ns /home/mako/polis/pg_dump /usr/local/bin/pg_dump
+	sudo ln -fs /home/mako/polis/pg_dump /usr/local/bin/pg_dump
 
 run: prepare start-rebuild
 
