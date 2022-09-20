@@ -5,8 +5,10 @@ E2E_RUN = cd e2e; CYPRESS_BASE_URL=$(BASEURL)
 pull: ## Pull most recent Docker container builds (nightlies)
 	docker-compose pull
 
-install:
-    sudo ln -s /home/mako/polis/pg_dump /usr/local/bin/pg_dump
+prepare:
+	sudo ln -ns /home/mako/polis/pg_dump /usr/local/bin/pg_dump
+
+run: prepare start-rebuild
 
 start: ## Start all Docker containers
 	docker-compose up --detach
