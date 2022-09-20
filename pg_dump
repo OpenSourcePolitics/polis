@@ -1,1 +1,1 @@
-docker-compose -f polis/docker-compose.yml exec --user postgres postgres /bin/sh -c 'pg_dump -Fc "polis-dev"'
+docker-compose -f polis/docker-compose.yml -T exec --user postgres postgres /bin/sh -c 'pg_dump -Fc "polis-dev"'
