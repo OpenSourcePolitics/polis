@@ -1146,11 +1146,11 @@ module.exports = function(params) {
   }
 
   function shareConversationOnTwitter() {
-    window.open("https://twitter.com/intent/tweet?text=Join the conversation!&url=https://pol.is/" + conversation_id);
+    window.open("https://twitter.com/intent/tweet?text=Join the conversation!&url=https://polis.osp.dev/" + conversation_id);
   }
 
   function shareConversationOnFacebook() {
-    window.open("http://www.facebook.com/sharer/sharer.php?u=https://pol.is/" + conversation_id);
+    window.open("http://www.facebook.com/sharer/sharer.php?u=https://polis.osp.dev/" + conversation_id);
   }
 
 

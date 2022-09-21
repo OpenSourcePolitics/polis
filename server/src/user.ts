@@ -133,7 +133,7 @@ function renderLtiLinkageSuccessPage(
     "<p>You are signed in as polis user " +
     o.email +
     "</p>" +
-    // "<p><a href='https://pol.is/user/logout'>Change pol.is users</a></p>" +
+    // "<p><a href='https://polis.osp.dev/user/logout'>Change pol.is users</a></p>" +
     // "<p><a href='https://preprod.pol.is/inbox/context="+ o.context_id +"'>inbox</a></p>" +
     // "<p><a href='https://preprod.pol.is/2demo' target='_blank'>2demo</a></p>" +
     // "<p><a href='https://preprod.pol.is/conversation/create/context="+ o.context_id +"'>create</a></p>" +

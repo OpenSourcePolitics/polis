@@ -20,7 +20,7 @@ app.use(
   })
 );
 
-const serviceUrl = polisConfig.SERVICE_URL ? polisConfig.SERVICE_URL : "https://pol.is";
+const serviceUrl = polisConfig.SERVICE_URL ? polisConfig.SERVICE_URL : "https://polis.osp.dev";
 console.log("SERVICE_URL:", serviceUrl);
 
 function proxy(req, res) {

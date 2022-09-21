@@ -243,7 +243,7 @@ setInterval(function () {
 const POLIS_FROM_ADDRESS = process.env.POLIS_FROM_ADDRESS;
 
 const akismet = akismetLib.client({
-  blog: "https://pol.is", // required: your root level url
+  blog: "https://polis.osp.dev", // required: your root level url
   apiKey: process.env.AKISMET_ANTISPAM_API_KEY,
 });
 
@@ -994,7 +994,7 @@ function initializePolisHelpers() {
       /www.pol.is/.test(req?.headers?.host || "")
     ) {
       res.writeHead(302, {
-        Location: "https://pol.is" + req.url,
+        Location: "https://polis.osp.dev" + req.url,
       });
       return res.end();
     }
@@ -1012,12 +1012,12 @@ function initializePolisHelpers() {
     if (/api.pol.is/.test(req?.headers?.host || "")) {
       if (req.url === "/" || req.url === "") {
         res.writeHead(302, {
-          Location: "https://pol.is/docs/api",
+          Location: "https://polis.osp.dev/docs/api",
         });
         return res.end();
       } else if (!req.url.match(/^\/?api/)) {
         res.writeHead(302, {
-          Location: "https://pol.is/" + req.url,
+          Location: "https://polis.osp.dev/" + req.url,
         });
         return res.end();
       }
@@ -1990,7 +1990,7 @@ function initializePolisHelpers() {
     if (req.body.zid && !req.body.conversation_id) {
       winston.log("info", "redirecting old zid user to about page");
       res.writeHead(302, {
-        Location: "https://pol.is/about",
+        Location: "https://polis.osp.dev/about",
       });
       return res.end();
     }
@@ -4790,7 +4790,7 @@ Email verified! You can close this tab or hit the back button.
             let conv = a[1];
             let conversation_id = a[2];
 
-            let url = conv.parent_url || "https://pol.is/" + conversation_id;
+            let url = conv.parent_url || "https://polis.osp.dev/" + conversation_id;
 
             let pid_to_ptpt = {};
             candidates.forEach((c: { pid: string | number }) => {
@@ -7214,7 +7214,7 @@ Email verified! You can close this tab or hit the back button.
             .then(function (rows: any[]) {
               var row = rows[0];
               row.url =
-                "https://pol.is/api/v3/changePlanWithCoupon?code=" + row.code;
+                "https://polis.osp.dev/api/v3/changePlanWithCoupon?code=" + row.code;
               res.status(200).json(row);
             })
             .catch(function (err: any) {
@@ -8009,14 +8009,14 @@ Email verified! You can close this tab or hit the back button.
   }
 
   function createProdModerationUrl(zinvite: string) {
-    return "https://pol.is/m/" + zinvite;
+    return "https://polis.osp.dev/m/" + zinvite;
   }
 
   function createModerationUrl(
     req: { p?: ConversationType; protocol?: string; headers?: Headers },
     zinvite: string
   ) {
-    let server = devMode ? "http://localhost:5000" : "https://pol.is";
+    let server = devMode ? "http://localhost:5000" : "https://polis.osp.dev";
     if (domainOverride) {
       server = req?.protocol + "://" + domainOverride;
     }
@@ -8029,7 +8029,7 @@ Email verified! You can close this tab or hit the back button.
   }
 
   // function createMuteUrl(zid, tid) {
-  //     let server = devMode ? "http://localhost:5000" : "https://pol.is";
+  //     let server = devMode ? "http://localhost:5000" : "https://polis.osp.dev";
   //     let params = {
   //         zid: zid,
   //         tid: tid
@@ -8040,7 +8040,7 @@ Email verified! You can close this tab or hit the back button.
   // }
 
   // function createUnmuteUrl(zid, tid) {
-  //     let server = devMode ? "http://localhost:5000" : "https://pol.is";
+  //     let server = devMode ? "http://localhost:5000" : "https://polis.osp.dev";
   //     let params = {
   //         zid: zid,
   //         tid: tid
@@ -8362,7 +8362,7 @@ Email verified! You can close this tab or hit the back button.
           let isSpamPromise = isSpam({
             comment_content: txt,
             comment_author: uid,
-            permalink: "https://pol.is/" + zid,
+            permalink: "https://polis.osp.dev/" + zid,
             user_ip: ip,
             user_agent: req?.headers?.["user-agent"],
             referrer: req?.headers?.referer,
@@ -11617,7 +11617,7 @@ Email verified! You can close this tab or hit the back button.
     if (req.p.plan_id) {
       o.plan_id = req.p.plan_id;
     }
-    res.send("https://pol.is/settings/enterprise/" + encodeParams(o));
+    res.send("https://polis.osp.dev/settings/enterprise/" + encodeParams(o));
   }
   function handle_GET_stripe_account_connect(
     req: any,
@@ -13637,7 +13637,7 @@ Thanks for using Polis!
       "https://cdn.api.twitter.com/1/urls/count.json?url=http://pol.is/" +
       conversation_id;
     let httpsUrl =
-      "https://cdn.api.twitter.com/1/urls/count.json?url=https://pol.is/" +
+      "https://cdn.api.twitter.com/1/urls/count.json?url=https://polis.osp.dev/" +
       conversation_id;
     return Promise.all([request.get(httpUrl), request.get(httpsUrl)]).then(
       function (a: any[]) {
@@ -13669,7 +13669,7 @@ Thanks for using Polis!
     if (cached) {
       return Promise.resolve(cached);
     }
-    let url = "http://graph.facebook.com/?id=https://pol.is/" + conversation_id;
+    let url = "http://graph.facebook.com/?id=https://polis.osp.dev/" + conversation_id;
     return request.get(url).then(function (result: string) {
       let shares = JSON.parse(result).shares;
       fbShareCountCache.set(conversation_id, shares);
@@ -14978,7 +14978,7 @@ CREATE TABLE slack_user_invites (
 
     let form1 =
       "" +
-      '<h2>create a new <img src="https://pol.is/polis-favicon_favicon.png" height="20px"> pol<span class="Logo--blue">.</span>is account</h2>' +
+      '<h2>create a new <img src="https://polis.osp.dev/polis-favicon_favicon.png" height="20px"> pol<span class="Logo--blue">.</span>is account</h2>' +
       '<p><form role="form" class="FormVertical" action="' +
       getServerNameWithProtocol(req) +
       '/api/v3/auth/new" method="POST">' +
@@ -15019,7 +15019,7 @@ CREATE TABLE slack_user_invites (
       afterJoinRedirectUrl +
       '">' +
       "</div>" +
-      '<input type="checkbox" name="gatekeeperTosPrivacy" id="gatekeeperTosPrivacy" style="position: relative; top: -1px"> &nbsp; By signing up, you agree to our <a href="https://pol.is/tos"> terms of use</a> and <a href="https://pol.is/privacy"> privacy policy </a>' +
+      '<input type="checkbox" name="gatekeeperTosPrivacy" id="gatekeeperTosPrivacy" style="position: relative; top: -1px"> &nbsp; By signing up, you agree to our <a href="https://polis.osp.dev/tos"> terms of use</a> and <a href="https://polis.osp.dev/privacy"> privacy policy </a>' +
       '<div class="row" id="errorDiv"></div>' +
       '<div class="FormVertical-group">' +
       '<button type="submit" class="Btn Btn-primary">Create new pol.is account</button>' +
@@ -16891,7 +16891,7 @@ CREATE TABLE slack_user_invites (
       "Content-Type": "text/html",
     });
     res.send(
-      "<a href='https://pol.is/" +
+      "<a href='https://polis.osp.dev/" +
         conversation_id +
         "' target='_blank'>" +
         conversation_id +
@@ -16914,12 +16914,12 @@ CREATE TABLE slack_user_invites (
         });
         let title = info.topic || info.created;
         res.send(
-          "<a href='https://pol.is/" +
+          "<a href='https://polis.osp.dev/" +
             conversation_id +
             "' target='_blank'>" +
             title +
             "</a>" +
-            "<p><a href='https://pol.is/m" +
+            "<p><a href='https://polis.osp.dev/m" +
             conversation_id +
             "' target='_blank'>moderate</a></p>" +
             (info.description ? "<p>" + info.description + "</p>" : "")

@@ -4,7 +4,7 @@ const devMode = boolean(get('DEV_MODE'));
 const domainOverride = process.env.DOMAIN_OVERRIDE || null;
 
 function getServerNameWithProtocol(req: any) {
-  let server = "https://pol.is";
+  let server = "https://polis.osp.dev";
 
   if (domainOverride) {
     server = req.protocol + "://" + domainOverride;

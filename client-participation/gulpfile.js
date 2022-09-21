@@ -1153,7 +1153,7 @@ function doPurgeCache() {
 }
 
 gulp.task("configureForCachePurge", function () {
-  host = "https://pol.is";
+  host = "https://polis.osp.dev";
 });
 
 gulp.task("configureForCachePurgePreprod", function () {

@@ -185,7 +185,7 @@
         conv-data (future (get-conversation-data darwin zid))
         ;; Do anything needed with the data to prep
         {:keys [topic description]} @conv-data
-        url (str "https://pol.is/" @zinvite)]
+        url (str "https://polis.osp.dev/" @zinvite)]
     ;; Return the table of stuff to go into excel
     {:topic        topic
      :url          url

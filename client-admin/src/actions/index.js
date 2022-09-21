@@ -1699,7 +1699,7 @@ const dataExportGet = (
 ) => {
   //       url += ("&unixTimestamp=" + ((ctx.date/1000) << 0));
 
-  /* https://pol.is/api/v3/dataExport?conversation_id=2arcefpshi&format=csv&unixTimestamp=1447362000 */
+  /* https://polis.osp.dev/api/v3/dataExport?conversation_id=2arcefpshi&format=csv&unixTimestamp=1447362000 */
   let url = `/api/v3/dataExport?conversation_id=${conversation_id}&format=${format}`
   if (untilEnabled) {
     url += `&unixTimestamp=${unixTimestamp}`

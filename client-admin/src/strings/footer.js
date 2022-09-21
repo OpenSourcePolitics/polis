@@ -8,7 +8,7 @@ export default {
         links: [
           {
             title: 'About',
-            url: 'https://pol.is/company'
+            url: 'https://polis.osp.dev/company'
           },
           {
             title: 'Blog',
@@ -31,11 +31,11 @@ export default {
         links: [
           {
             title: 'Terms',
-            url: 'https://pol.is/tos'
+            url: 'https://polis.osp.dev/tos'
           },
           {
             title: 'Privacy',
-            url: 'https://pol.is/privacy'
+            url: 'https://polis.osp.dev/privacy'
           }
         ]
       }

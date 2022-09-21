@@ -133,11 +133,11 @@ class Createuser extends React.Component {
 
           <Box>
             I agree to the{' '}
-            <a href="https://pol.is/tos" tabIndex="110">
+            <a href="https://polis.osp.dev/tos" tabIndex="110">
               pol.is terms
             </a>{' '}
             and{' '}
-            <a href="https://pol.is/privacy" tabIndex="111">
+            <a href="https://polis.osp.dev/privacy" tabIndex="111">
               {' '}
               privacy agreement
             </a>

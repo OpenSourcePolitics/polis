@@ -2,7 +2,7 @@
 # Pol.is Terms of Use
 Last Updated: 2022/03/07
 
-Welcome, and thank you for your interest in The Computational Democracy Project ("we," or "us") and our Web site at <https://pol.is/> (the "Site"), as well as all related web sites, networks, embeddable widgets, downloadable software, mobile applications (including tablet applications), and other services provided by us and on which a link to these Terms of Use is displayed (collectively, together with the Site, our "Service").
+Welcome, and thank you for your interest in The Computational Democracy Project ("we," or "us") and our Web site at <https://polis.osp.dev/> (the "Site"), as well as all related web sites, networks, embeddable widgets, downloadable software, mobile applications (including tablet applications), and other services provided by us and on which a link to these Terms of Use is displayed (collectively, together with the Site, our "Service").
 These Terms of Use are a legally binding contract between you and The Computational Democracy Project regarding your use of the Service.
 
 1. **Eligibility.** &nbsp;
@@ -82,7 +82,7 @@ These Terms of Use are a legally binding contract between you and The Computatio
  To the extent permitted by applicable laws and regulations, no unused portions of pre-paid fees will be refunded following termination.
 
 7. **Privacy Policy; Additional Terms.** &nbsp;
- Please read The Computational Democracy Project Privacy Policy (<https://pol.is/privacy>) carefully for information relating to our collection, use, storage and disclosure of your personal information. 
+ Please read The Computational Democracy Project Privacy Policy (<https://polis.osp.dev/privacy>) carefully for information relating to our collection, use, storage and disclosure of your personal information. 
  The Computational Democracy Project Privacy Policy is hereby incorporated by reference into, and made a part of, these Terms. 
 
 8. **Additional Terms.** &nbsp;
@@ -181,7 +181,7 @@ We reserve the right, at our own expense, to assume the exclusive defense and co
   If Subsection 16.6 is found to be unenforceable or if the entirety of this Section 16 is found to be unenforceable, then the entirety of this Section 16 shall be null and void and, in such case, the parties agree that the exclusive jurisdiction and venue described in Section 14 shall govern any action arising out of or related to these Terms.
 
 17. **Consent to Electronic Communications.** &nbsp;
- By using the Service, you consent to receiving certain electronic communications from us as further described in our Privacy Policy (<https://pol.is/privacy>).
+ By using the Service, you consent to receiving certain electronic communications from us as further described in our Privacy Policy (<https://polis.osp.dev/privacy>).
  Please read our Privacy Policy to learn more about your choices regarding our electronic communications practices.
  You agree that any notices, agreements, disclosures, or other communications that we send to you electronically will satisfy any legal communication requirements, including that such communications be in writing. 
 
