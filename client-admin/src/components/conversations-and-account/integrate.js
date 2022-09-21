@@ -54,7 +54,7 @@ class Integrate extends React.Component {
               {"'>\n"}
               {'</div>\n'}
               {'<script async\n'}
-              {"  src='https://pol.is/embed.js'>\n"}
+              {"  src='https://polis.osp.dev/embed.js'>\n"}
               {'</script>'}
             </pre>
           </Box>
